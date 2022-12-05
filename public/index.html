@@ -151,15 +151,26 @@
       <img class="logo" src="/supercorn.gif" alt="a sparkly unicorn" />
       <h1 title="MyohTheWeb">MyohTheWeb</h1>
     </div>
-    <form>
-      <input placeholder="Search the web with MyohTheWeb">
+    <form id="uv-form" class="flex-center">
+      <input
+        id="uv-search-engine"
+        value="https://www.google.com/search?q=%s"
+        type="hidden"
+      />
+      <input id="uv-address" type="text" placeholder="Search the web with MyohTheWeb" />
       <input type="submit" id="aboutbutton" value="Go!">
     </form>
+    <div class="desc left-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
     <div title="r3ality" class="desc">
       <p>Unlimited access to the world wide web is now a r3ality<br>Made by r3ality_cubed#7958<br><br>Visit <a href="https://myohthegod.edjiang1234.repl.co"><i>my website</i></a> for more cool stuff!</p>
     </div>
     <script src="uv/uv.bundle.js" defer></script>
     <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
     <script src="index.js" defer></script>
   </body>
 

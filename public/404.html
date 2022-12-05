@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>MyohTheWeb | Error</title>
+    <link rel="shortcut icon" href="supercorn.gif" />
+  </head>
+
+  <body>
+    <div class="logo-wrapper left-margin">
+      <h1>MyohTheWeb | Error</h1>
+    </div>
+    <div class="desc left-margin">
+      <p>The server could not route your request.</p>
+      <p id="uv-error"></p>
+      <code id="uv-error-code"></code>
+      <button id="uv-register-sw" value="Register service worker">
+        Register ServiceWorker
+      </button>
+    </div>
+    <footer>
+      <a
+        title="For privacy implications related to Ultraviolet."
+        href="https://github.com/titaniumnetwork-dev/Ultraviolet/raw/main/LICENSE"
+        style="margin-left: auto"
+        >License</a
+      >
+      <span>MyohTheWeb is an instance of Ultraviolet. &copy; TN 2022</span>
+    </footer>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="register-sw.js"></script>
+    <script src="error.js"></script>
+  </body>
+</html>
